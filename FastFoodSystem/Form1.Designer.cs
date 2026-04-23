@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            label1 = new Label();
+            textBox1 = new TextBox();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(55, 83);
+            label1.Name = "label1";
+            label1.Size = new Size(109, 28);
+            label1.TabIndex = 0;
+            label1.Text = "Just a test";
+            label1.Click += label1_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(185, 93);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(171, 27);
+            textBox1.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox textBox1;
     }
 }
